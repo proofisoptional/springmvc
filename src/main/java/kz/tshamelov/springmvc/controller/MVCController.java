@@ -11,10 +11,6 @@ public class MVCController {
     public String helloPage(){
         return "helloworld";
     }
-    @GetMapping("/goodbye")
-    public String goodByePage(){
-        return "second/goodbye";
-    }
 
     @GetMapping("/modeltesting")
     public String testingModel(@RequestParam("name") String name,
